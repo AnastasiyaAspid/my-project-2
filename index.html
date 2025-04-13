@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico">
+    <title>HOUZZY</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a class="header__logo" href="#" aria-label="На главную страницу"><img src="images/sprite/logo.svg"
+                        width="110" height="40" alt="Логотип"></a>
+                <button class="header__burger" type="button" aria-label="Открыть бургер-меню"><img
+                        src="images/sprite/icon-burger.svg" alt="Открыть меню-бургер"></button>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#">Каталог</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#">Акции</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#">Отзывы</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#">Доставка</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#">Оплата</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#">События</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="header__links-list">
+                    <li class="header__links-item">
+                        <a class="header__links-link" href="#" aria-label="Поиск">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_57)">
+                                    <path
+                                        d="M22.776 22.1332L16.1374 15.4946C17.5162 13.9636 18.3637 11.945 18.3637 9.72728C18.3637 4.96525 14.4894 1.09094 9.72732 1.09094C4.96525 1.09094 1.09094 4.96525 1.09094 9.72732C1.09094 14.4894 4.96525 18.3637 9.72732 18.3637C11.9451 18.3637 13.9636 17.5162 15.4946 16.1373L22.1332 22.776C22.222 22.8647 22.3383 22.9091 22.4546 22.9091C22.5709 22.9091 22.6872 22.8647 22.776 22.776C22.9535 22.5984 22.9535 22.3107 22.776 22.1332ZM9.72732 17.4546C5.46685 17.4546 2.00006 13.9882 2.00006 9.72732C2.00006 5.46643 5.46685 2.00002 9.72732 2.00002C13.9878 2.00002 17.4546 5.46638 17.4546 9.72732C17.4546 13.9883 13.9878 17.4546 9.72732 17.4546Z"
+                                        fill="currentColor" stroke="currentColor" stroke-width="0.3" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_57">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header__links-item">
+                        <a class="header__links-link" href="#" aria-label="Избранное">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.9091 2.00012C14.9546 2.00314 13.1236 2.95644 12 4.5557C10.8765 2.95644 9.04549 2.00314 7.09094 2.00012C3.89456 2.00012 1.09094 4.97402 1.09094 8.36376C1.09094 11.6674 2.95635 15.0699 6.48583 18.2038C8.12113 19.653 9.91498 20.9128 11.8331 21.9595C11.9379 22.0134 12.0622 22.0134 12.1669 21.9595C14.0844 20.9128 15.8777 19.6528 17.5125 18.2038C21.0437 15.0699 22.9091 11.6674 22.9091 8.36376C22.9091 4.97402 20.1055 2.00012 16.9091 2.00012V2.00012ZM12 21.223C10.6645 20.4859 1.81822 15.3368 1.81822 8.36376C1.81822 5.36127 4.28182 2.72739 7.09094 2.72739C8.994 2.73077 10.7483 3.7574 11.6833 5.41507C11.7532 5.52196 11.8724 5.58624 12 5.58624C12.1277 5.58624 12.2468 5.52196 12.3168 5.41507C13.2518 3.7574 15.0061 2.73077 16.9091 2.72739C19.7183 2.72739 22.1819 5.36127 22.1819 8.36376C22.1819 15.3368 13.3356 20.4859 12 21.223Z"
+                                    fill="currentColor" stroke="currentColor" stroke-width="0.3" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header__links-item">
+                        <a class="header__links-link" href="#" aria-label="Корзина">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.841 4.50003H16.091V2.79549C16.0899 1.85458 15.3273 1.09205 14.3864 1.09094H9.61369C8.67278 1.09205 7.91025 1.85458 7.90915 2.79549V4.50003H4.15915C3.97088 4.50003 3.81824 4.65268 3.81824 4.84094V22.5682C3.81824 22.7565 3.97088 22.9091 4.15915 22.9091H19.841C20.0292 22.9091 20.1819 22.7565 20.1819 22.5682V4.84094C20.1819 4.65268 20.0292 4.50003 19.841 4.50003ZM8.59096 2.79549C8.59096 2.23064 9.04885 1.77276 9.61369 1.77276H14.3864C14.9513 1.77276 15.4091 2.23064 15.4091 2.79549V4.50003H8.59096V2.79549ZM19.5001 22.2273H4.50006V5.18185H7.90915V6.54549C7.90915 6.73376 8.06179 6.8864 8.25006 6.8864C8.43832 6.8864 8.59096 6.73376 8.59096 6.54549V5.18185H15.4091V6.54549C15.4091 6.73376 15.5618 6.8864 15.7501 6.8864C15.9383 6.8864 16.091 6.73376 16.091 6.54549V5.18185H19.5001V22.2273Z"
+                                    fill="currentColor" stroke="currentColor" stroke-width="0.3" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header__links-item header__links-item--phone">
+                        <a class="header__links-link" href="#" aria-label="Позвонить">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_61)">
+                                    <path
+                                        d="M22.3366 17.9227L17.9205 14.9777C17.3601 14.607 16.6089 14.7289 16.1946 15.258L14.9082 16.9119C14.7429 17.1299 14.4424 17.1931 14.2032 17.0603L13.9586 16.9254C13.1474 16.4833 12.1381 15.9328 10.1046 13.8986C8.07107 11.8643 7.51952 10.8543 7.07738 10.0446L6.94321 9.79992C6.80853 9.56081 6.87057 9.25902 7.08863 9.09238L8.74146 7.80641C9.2703 7.39205 9.39245 6.64105 9.02215 6.08047L6.07713 1.66439C5.69763 1.09354 4.93624 0.922174 4.34873 1.27535L2.50208 2.38463C1.92186 2.72574 1.49617 3.27819 1.31428 3.9262C0.649304 6.34911 1.14956 10.5307 7.30938 16.6912C12.2094 21.5909 15.8572 22.9085 18.3645 22.9085C18.9415 22.911 19.5163 22.8359 20.0733 22.6853C20.7215 22.5036 21.274 22.0779 21.6149 21.4975L22.7253 19.6519C23.079 19.0643 22.9077 18.3024 22.3366 17.9227ZM22.0988 19.2789L20.991 21.1255C20.7462 21.5444 20.3488 21.8524 19.882 21.985C17.6453 22.5991 13.7375 22.0905 7.82382 16.1768C1.91014 10.2631 1.40154 6.35567 2.01564 4.11857C2.1484 3.65126 2.45679 3.25335 2.87622 3.00819L4.72286 1.90035C4.97778 1.74697 5.30824 1.82132 5.47292 2.06903L7.0727 4.47085L8.41542 6.48473C8.57622 6.72789 8.52339 7.05379 8.29399 7.23372L6.64079 8.5197C6.13768 8.9044 5.99401 9.60047 6.30376 10.1529L6.43504 10.3914C6.89971 11.2437 7.47742 12.3039 9.58657 14.4127C11.6957 16.5214 12.7556 17.0992 13.6074 17.5638L13.8463 17.6954C14.3987 18.0051 15.0948 17.8615 15.4795 17.3584L16.7655 15.7052C16.9455 15.4759 17.2712 15.4231 17.5145 15.5838L21.9302 18.5288C22.1781 18.6933 22.2524 19.024 22.0988 19.2789Z"
+                                        fill="currentColor" stroke="currentColor" stroke-width="0.3" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_61">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Каталог</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Home Decor</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Ваза Керамическая Terravisori</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section class="product">
+            <div class="container">
+                <h1 class="visually-hidden ">Информация о товаре</h1>
+                <div class="product__wrapper">
+                    <div class="product__photo-block">
+                        <ul class="product__photo-list">
+                            <li class="product__photo-item">
+                                <picture>
+                                    <source media="(max-width:767px)"
+                                        srcset="images/photo-1-mobile.png 1x, images/photo-1-mobile@2.png 2x" width="78"
+                                        height="80">
+                                    <source media="(max-width:1440px)"
+                                        srcset="images/photo-1-tablet.png 1x, images/photo-1-tablet@2.png 2x"
+                                        width="100" height="120">
+                                    <img src="images/photo-1-desktop.png" srcset="images/photo-1-desktop@2.png 2x"
+                                        alt="Фото 1" width="120" height="138">
+                                </picture>
+                            </li>
+                            <li class="product__photo-item">
+                                <picture>
+                                    <source media="(max-width:767px)"
+                                        srcset="images/photo-2-mobile.png 1x, images/photo-2-mobile@2.png 2x" width="78"
+                                        height="80">
+                                    <source media="(max-width:1440px)"
+                                        srcset="images/photo-2-tablet.png 1x, images/photo-2-tablet@2.png 2x"
+                                        width="100" height="120">
+                                    <img src="images/photo-2-desktop.png" srcset="images/photo-2-desktop@2.png 2x"
+                                        alt="Фото 2" width="120" height="138">
+                                </picture>
+                            </li>
+                            <li class="product__photo-item">
+                                <picture>
+                                    <source media="(max-width:767px)"
+                                        srcset="images/photo-3-mobile.png 1x, images/photo-3-mobile@2.png 2x" width="78"
+                                        height="80">
+                                    <source media="(max-width:1440px)"
+                                        srcset="images/photo-3-tablet.png 1x, images/photo-3-tablet@2.png 2x"
+                                        width="100" height="120">
+                                    <img src="images/photo-3-desktop.png" srcset="images/photo-3-desktop@2.png 2x"
+                                        alt="Фото 3" width="120" height="138">
+                                </picture>
+                            </li>
+                            <li class="product__photo-item">
+                                <picture>
+                                    <source media="(max-width:767px)"
+                                        srcset="images/photo-4-mobile.png 1x, images/photo-4-mobile@2.png 2x" width="78"
+                                        height="80">
+                                    <source media="(max-width:1440px)"
+                                        srcset="images/photo-4-tablet.png 1x, images/photo-4-tablet@2.png 2x"
+                                        width="100" height="120">
+                                    <img src="images/photo-4-desktop.png" srcset="images/photo-4-desktop@2.png 2x"
+                                        alt="Фото 4" width="120" height="138">
+                                </picture>
+                            </li>
+                        </ul>
+                        <div class="product__marker-sale-block">
+                            <span class="product__marker-sale">-20%</span>
+                            <picture>
+                                <source media="(max-width:767px)"
+                                    srcset="images/photo-5-mobile.png 1x, images/photo-5-mobile@2x.png 2x" width="320"
+                                    height="274">
+                                <source media="(max-width:1440px)"
+                                    srcset="images/photo-5-tablet.png 1x, images/photo-5-tablet@2.png 2x" width="568"
+                                    height="486">
+                                <img src="images/photo-5-desktop.png" width="600" height="560"
+                                    srcset="images/photo-5-desktop@2.png 2x" alt="Фото 5">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="product__links-block">
+                        <div class="product__tittle-block">
+                            <span class="product__tittle-min">Home decor</span>
+                            <h2 class="product__tittle">Ваза керамическая terravisori</h2>
+                        </div>
+                        <div class="product__sale-block">
+                            <div class="product__sale-block-text">
+                                <span class="product__sale-text">1 520 руб.</span>
+                                <span class="product__sale-text product__sale-text--gray">1 900 руб.</span>
+                            </div>
+                            <a class="product__link-dolyame" href="#">
+                                <div class="product__dolyame"><img src="images/sprite/dolyame-logo.svg" width="56"
+                                        height="8" alt="Долями"></div>
+                                <p class="product__text-min">4 платежа по 380 руб.</p>
+                                <img src="images/chevron-right.png" width="16" height="16" alt="Открыть">
+                            </a>
+                        </div>
+                        <ul class="product__color-list">
+                            <li class="product__color-item">
+                                <button class="product__color product__color--1" type="button"></button>
+                            </li>
+                            <li class="product__color-item">
+                                <button class="product__color product__color--2" type="button"></button>
+                            </li>
+                            <li class="product__color-item">
+                                <button class="product__color product__color--3" type="button"></button>
+                            </li>
+                            <li class="product__color-item">
+                                <button class="product__color product__color--4" type="button"></button>
+                            </li>
+                        </ul>
+                        <div class="product__btn-block">
+                            <button class="product__btn-basket" type="button">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.841 4.50003H16.091V2.79549C16.0899 1.85458 15.3273 1.09205 14.3864 1.09094H9.61369C8.67278 1.09205 7.91025 1.85458 7.90915 2.79549V4.50003H4.15915C3.97088 4.50003 3.81824 4.65268 3.81824 4.84094V22.5682C3.81824 22.7565 3.97088 22.9091 4.15915 22.9091H19.841C20.0292 22.9091 20.1819 22.7565 20.1819 22.5682V4.84094C20.1819 4.65268 20.0292 4.50003 19.841 4.50003ZM8.59096 2.79549C8.59096 2.23064 9.04885 1.77276 9.61369 1.77276H14.3864C14.9513 1.77276 15.4091 2.23064 15.4091 2.79549V4.50003H8.59096V2.79549ZM19.5001 22.2273H4.50006V5.18185H7.90915V6.54549C7.90915 6.73376 8.06179 6.8864 8.25006 6.8864C8.43832 6.8864 8.59096 6.73376 8.59096 6.54549V5.18185H15.4091V6.54549C15.4091 6.73376 15.5618 6.8864 15.7501 6.8864C15.9383 6.8864 16.091 6.73376 16.091 6.54549V5.18185H19.5001V22.2273Z"
+                                        fill="currentColor" stroke="currentColor" stroke-width="0.3" />
+                                </svg>
+                                <span class="product__text">Добавить в корзину</span>
+                            </button>
+                            <button class="product__btn" type="button" aria-label="Добавить в избранное">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.9091 2.00012C14.9546 2.00314 13.1236 2.95644 12 4.5557C10.8765 2.95644 9.04549 2.00314 7.09094 2.00012C3.89456 2.00012 1.09094 4.97402 1.09094 8.36376C1.09094 11.6674 2.95635 15.0699 6.48583 18.2038C8.12113 19.653 9.91498 20.9128 11.8331 21.9595C11.9379 22.0134 12.0622 22.0134 12.1669 21.9595C14.0844 20.9128 15.8777 19.6528 17.5125 18.2038C21.0437 15.0699 22.9091 11.6674 22.9091 8.36376C22.9091 4.97402 20.1055 2.00012 16.9091 2.00012V2.00012ZM12 21.223C10.6645 20.4859 1.81822 15.3368 1.81822 8.36376C1.81822 5.36127 4.28182 2.72739 7.09094 2.72739C8.994 2.73077 10.7483 3.7574 11.6833 5.41507C11.7532 5.52196 11.8724 5.58624 12 5.58624C12.1277 5.58624 12.2468 5.52196 12.3168 5.41507C13.2518 3.7574 15.0061 2.73077 16.9091 2.72739C19.7183 2.72739 22.1819 5.36127 22.1819 8.36376C22.1819 15.3368 13.3356 20.4859 12 21.223Z"
+                                        fill="currentColor" stroke="currentColor" stroke-width="0.3" />
+                                </svg>
+
+                            </button>
+                        </div>
+                        <div class="product__links">
+                            <a class="product__text" href="#">Подробные характеристики</a>
+                            <a class="product__text" href="#">Как сделать заказ</a>
+                        </div>
+                        <div class="product__bottom-block">
+                            <p class="product__text">Есть вопросы по товару или заказу?</p>
+                            <a class="product__bottom-link" href="tel:+78000000000">8 (800) 000-00-00</a>
+                            <span class="product__bottom-text">ежедневно с 10:00 до 20:00 по МСК</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="description">
+            <div class="container">
+                <div class="description__text-block">
+                    <h2 class="description__tittle">О товаре</h2>
+                    <p class="description__text">Изящная декоративная стеклянная ваза для домашнего декора. Ваза
+                        идеально подойдет для цветов и&nbsp;всевозможных творческих композиций. Керамическая ваза
+                        послужит прекрасным декором для вашего дома и&nbsp;дачи. Может использоваться
+                        в&nbsp;качестве подарка маме, бабушке, сестре, жене на&nbsp;8&nbsp;марта, день рождения,
+                        новоселье и&nbsp;т.д. Благодаря уникальному дизайну и&nbsp;цвету данная ваза станет
+                        украшением любого стола и&nbsp;интерьера и&nbsp;никого не&nbsp;оставит равнодушным.</p>
+                    <a class="description__text-link" href="#"><span>Раскрыть подробнее</span></a>
+                </div>
+                <div class="description__photo-block">
+                    <h2 class="description__tittle">Товар в интерьере</h2>
+                    <ul class="description__photo-list">
+                        <li class="description__photo-item">
+                            <picture>
+                                <source media="(max-width:767px)"
+                                    srcset="images/photo-6-mobile.png 1x, images/photo-6-mobile@2.png 2x" width="280"
+                                    height="280">
+                                <source media="(max-width:1440px)"
+                                    srcset="images/photo-6-tablet.png 1x, images/photo-6-tablet@2.png 2x" width="230"
+                                    height="230">
+                                <img src="images/photo-6-desktop.png" srcset="images/photo-6-desktop@2.png 2x"
+                                    alt="Фото в интерьере 1" width="456" height="456">
+                            </picture>
+                        </li>
+                        <li class="description__photo-item description__photo-item--span">
+                            <picture>
+                                <source media="(max-width:767px)"
+                                    srcset="images/photo-7-mobile.png 1x, images/photo-7-mobile@2.png 2x" width="280"
+                                    height="280">
+                                <source media="(max-width:1440px)"
+                                    srcset="images/photo-7-tablet.png 1x, images/photo-7-tablet@2.png 2x" width="230"
+                                    height="230">
+                                <img src="images/photo-7-desktop.png" srcset="images/photo-7-desktop@2.png 2x"
+                                    alt="Фото в интерьере 2" width="456" height="456">
+                            </picture>
+                        </li>
+                        <li class="description__photo-item">
+                            <picture>
+                                <source media="(max-width:767px)"
+                                    srcset="images/photo-8-mobile.png 1x, images/photo-8-mobile@2.png 2x" width="280"
+                                    height="280">
+                                <source media="(max-width:1440px)"
+                                    srcset="images/photo-8-tablet.png 1x, images/photo-8-tablet@2.png 2x" width="230"
+                                    height="230">
+                                <img src="images/photo-8-desktop.png" srcset="images/photo-8-desktop@2.png 2x"
+                                    alt="Фото в интерьере 3" width="456" height="456">
+                            </picture>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top-wrapper">
+                <div class="footer__link-block">
+                    <span class="footer__tittle">покупателям</span>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Как сделать заказ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Доставка</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Оплата</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Каталог</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Коллекции</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Отзывы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__link-block">
+                    <span class="footer__tittle">о houzzy</span>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">О компании</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Сотрудничество</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Вакансии</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">События</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Контакты</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Реквизиты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__link-block footer__link-block--right">
+                    <span class="footer__tittle">контактная информация</span>
+                    <ul class="footer__list-right">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">г. Красноярск, ул. Декабристов 19а</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">8 (800) 000-00-00</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list-icon">
+                        <li class="footer__item-icon">
+                            <a class="footer__icon-link" href="#" aria-label="Whatsapp">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M11.9975 2H12.0025C17.5162 2 22 6.48625 22 12C22 17.5138 17.5162 22 12.0025 22C9.96875 22 8.0825 21.395 6.50125 20.3475L2.6575 21.5763L3.90375 17.8612C2.705 16.215 2 14.1875 2 12C2 6.485 6.48375 2 11.9975 2ZM15.8592 17.5325C16.6229 17.3675 17.5804 16.8025 17.8217 16.1212C18.0629 15.4387 18.0629 14.8575 17.9929 14.7337C17.9364 14.6355 17.8028 14.5712 17.6032 14.4751C17.5513 14.4501 17.4949 14.423 17.4342 14.3925C17.1404 14.2462 15.7117 13.54 15.4417 13.4462C15.1767 13.3462 14.9242 13.3812 14.7242 13.6637C14.6861 13.717 14.6482 13.7704 14.6105 13.8234C14.3692 14.1628 14.1364 14.4901 13.9429 14.6987C13.7667 14.8862 13.4792 14.91 13.2379 14.81C13.2116 14.799 13.1815 14.7868 13.1477 14.7732C12.7657 14.6189 11.9185 14.2767 10.8929 13.3637C10.0279 12.5937 9.44043 11.635 9.27043 11.3475C9.10352 11.0591 9.24749 10.89 9.38055 10.7337C9.38302 10.7308 9.38548 10.7279 9.38793 10.725C9.47372 10.6188 9.55697 10.5305 9.64064 10.4416C9.70082 10.3777 9.76122 10.3136 9.82293 10.2425C9.8321 10.2319 9.84101 10.2217 9.84969 10.2117C9.98073 10.061 10.0588 9.9713 10.1467 9.78373C10.2467 9.58998 10.1754 9.38998 10.1042 9.24248C10.0552 9.13918 9.75233 8.40444 9.49237 7.7737C9.38112 7.50379 9.27773 7.25292 9.20543 7.07873C9.01168 6.61498 8.86418 6.59748 8.57043 6.58498C8.56143 6.58453 8.55235 6.58407 8.54317 6.58361C8.45031 6.57891 8.34805 6.57373 8.23543 6.57373C7.85293 6.57373 7.45418 6.68623 7.21293 6.93248C7.2045 6.94109 7.19571 6.95003 7.18659 6.9593C6.87795 7.27319 6.19043 7.97241 6.19043 9.36623C6.19043 10.7627 7.1813 12.1143 7.36465 12.3643C7.3697 12.3712 7.37414 12.3773 7.37793 12.3825C7.38896 12.397 7.40975 12.4271 7.44002 12.4709C7.81437 13.013 9.63772 15.6535 12.3567 16.78C14.6542 17.7325 15.3367 17.6437 15.8592 17.5325Z"
+                                        fill="CurrentColor" />
+                                </svg>
+
+                            </a>
+                        </li>
+                        <li class="footer__item-icon">
+                            <a class="footer__icon-link" href="#" aria-label="tg">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0_1_147" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="1"
+                                        y="3" width="22" height="18">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1 3H23V21H1V3Z"
+                                            fill="white" />
+                                    </mask>
+                                    <g mask="url(#mask0_1_147)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M23 4.44622C22.8844 4.94953 22.7641 5.45183 22.6541 5.95632C21.9432 9.21875 21.2346 12.4817 20.5249 15.7444C20.2192 17.1495 19.9158 18.5552 19.603 19.9588C19.5624 20.1412 19.4899 20.3224 19.4006 20.4876C19.1615 20.9292 18.7678 21.0957 18.2832 20.9467C18.0623 20.8787 17.8397 20.7793 17.653 20.6465C16.0719 19.5215 14.4989 18.3855 12.9234 17.253C12.8664 17.212 12.8079 17.1728 12.7399 17.1257C12.6876 17.1696 12.6382 17.2072 12.5931 17.2494C11.7797 18.0104 10.9662 18.7713 10.1542 19.5339C9.91227 19.761 9.63696 19.8977 9.27512 19.8772C9.30507 19.4379 9.33256 19.0127 9.36336 18.5878C9.4279 17.6981 9.49409 16.8085 9.55983 15.9189C9.57019 15.7788 9.60741 15.6354 9.58869 15.4993C9.51791 14.9864 9.8116 14.689 10.1703 14.3751C13.0869 11.8221 15.9895 9.25373 18.8963 6.68988C18.9389 6.65231 18.9941 6.62065 19.0193 6.57374C19.0653 6.48769 19.0932 6.39231 19.1288 6.3008C19.0307 6.27375 18.9221 6.20659 18.8365 6.22797C18.6602 6.27189 18.4834 6.34309 18.3288 6.43786C14.5401 8.76116 10.7542 11.0888 6.96864 13.4171C6.86231 13.4825 6.77103 13.5187 6.63452 13.4764C5.02852 12.9785 3.41891 12.492 1.81302 11.9937C1.61873 11.9334 1.42536 11.8433 1.25913 11.7285C0.946656 11.5128 0.909036 11.1969 1.18858 10.9419C1.39335 10.7551 1.64129 10.5893 1.90005 10.4883C3.25308 9.96035 4.61532 9.4553 5.97499 8.94378C11.1402 7.00084 16.3055 5.05785 21.4722 3.1188C21.6366 3.0571 21.8158 3.01649 21.9911 3.00328C22.4558 2.96829 22.8006 3.21525 22.9427 3.65883C22.9594 3.71108 22.9808 3.76198 23 3.8135V4.44622Z"
+                                            fill="CurrentColor" />
+                                    </g>
+                                </svg>
+
+                            </a>
+                        </li>
+                        <li class="footer__item-icon">
+                            <a class="footer__icon-link" href="#" aria-label="vk">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0_1_151" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0"
+                                        y="5" width="24" height="14">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5H24V19H0V5Z"
+                                            fill="white" />
+                                    </mask>
+                                    <g mask="url(#mask0_1_151)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.92898 5.97265C8.10115 5.58484 8.37473 5.34403 8.73062 5.2547C9.16196 5.14647 9.60749 5.07181 10.0505 5.04353C11.0907 4.97712 12.1332 4.96046 13.1615 5.18725C13.7311 5.31286 14.0157 5.62369 14.0255 6.2266C14.0416 7.20659 14.0074 8.18738 14.004 9.16785C14.002 9.75739 14.0181 10.347 14.0263 10.9365C14.0265 10.9566 14.028 10.9767 14.0314 10.9964C14.0915 11.338 14.1669 11.7055 14.5144 11.831C14.8454 11.9504 15.0802 11.6706 15.2833 11.4472C16.2368 10.3992 16.9288 9.1717 17.5368 7.89242C17.7881 7.36369 18.0015 6.81565 18.2251 6.27331C18.4264 5.78495 18.6494 5.62257 19.158 5.6188C20.4242 5.60943 21.6902 5.60086 22.9563 5.59197C23.9683 5.58484 24.216 5.9479 23.8219 6.90706C23.3671 8.01378 22.6551 8.9578 21.9638 9.9124C21.4815 10.5786 20.977 11.2281 20.5052 11.9019C19.8565 12.8287 19.895 13.161 20.6751 13.9748C21.5014 14.8366 22.3396 15.6875 23.1392 16.575C23.4252 16.8927 23.6383 17.2896 23.8404 17.6749C24.1345 18.2355 23.9477 18.6705 23.3542 18.8596C23.1713 18.9179 22.9729 18.9453 22.7809 18.9493C21.6806 18.9722 20.5802 18.9899 19.4797 18.9973C18.809 19.0018 18.2498 18.6901 17.7814 18.237C17.2862 17.7579 16.8425 17.2228 16.369 16.7193C16.1327 16.4681 15.8971 16.2107 15.6312 15.9953C15.1054 15.5696 14.6179 15.6683 14.3669 16.3086C14.1852 16.7717 14.082 17.2868 14.0459 17.7866C13.9796 18.7033 13.722 18.9885 12.8262 18.9972C11.7543 19.0075 10.6879 19.0069 9.64552 18.6772C7.81487 18.0981 6.36419 16.9683 5.16323 15.4669C3.42128 13.2893 2.10513 10.8418 0.893496 8.32918C0.617421 7.75671 0.356467 7.17615 0.103852 6.59223C-0.142683 6.02208 0.0528772 5.68698 0.65686 5.67104C1.74713 5.6422 2.83803 5.63587 3.92861 5.62417C4.5262 5.61776 4.9174 5.87764 5.15505 6.47687C5.79925 8.10191 6.60924 9.63938 7.64168 11.043C7.82726 11.2953 8.05119 11.5302 8.29554 11.7219C8.65634 12.0047 9.00506 11.9027 9.15292 11.4631C9.2721 11.1086 9.3703 10.7276 9.37779 10.3563C9.39727 9.38792 9.42011 8.41273 9.33188 7.45101C9.24404 6.49273 8.94045 6.23597 7.92898 5.97265Z"
+                                            fill="CurrentColor" />
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__item-icon">
+                            <a class="footer__icon-link" href="#" aria-label="youtube">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.38181 7.20123C10.4261 7.92357 11.5054 8.71634 12.542 9.47934C13.5888 10.2508 14.6511 10.993 15.6675 11.7395C13.8452 12.9284 12.0152 14.0748 10.168 15.2467C9.90865 15.4103 9.66213 15.6093 9.38181 15.7346V7.20123ZM1.00617 8.42965V15.6371C1.00617 16.485 0.964396 17.2863 1.16238 17.8797C1.35945 18.4688 1.71545 18.943 2.13548 19.2869C2.57094 19.642 3.07634 19.9012 3.82013 19.9631C4.52032 20.0203 5.3404 19.9812 6.14731 19.9812H17.8699C18.6582 19.9812 19.4565 20.0338 20.2148 19.9631C21.5562 19.8379 22.4798 18.9732 22.8371 17.8452C23.031 17.2337 22.9934 16.4324 22.9934 15.6022V8.39382C22.9934 7.53942 23.0492 6.80323 22.8371 6.15079C22.6482 5.56956 22.3181 5.09164 21.8827 4.72727C21.4558 4.37034 20.9618 4.09624 20.2148 4.03296C19.4778 3.97153 18.6541 4.01481 17.8876 4.01481H6.16456C5.38989 4.01481 4.49626 3.97292 3.78562 4.03296C2.46605 4.14464 1.48069 5.04836 1.14558 6.16894C0.955315 6.80322 1.00617 7.6162 1.00617 8.42965Z"
+                                        fill="CurrentColor" />
+                                </svg>
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer__bottom-wrapper">
+                <a class="footer__bottom-link" href="#">Пользовательское соглашение и условия</a>
+                <a class="footer__bottom-link" href="#">&copy;&nbsp;Houzzy, 2024. Информация на&nbsp;сайте
+                    не&nbsp;является офертой и&nbsp;носит информационный характер</a>
+                <a class="footer__bottom-link" href="#">Обработка персональных данных</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
